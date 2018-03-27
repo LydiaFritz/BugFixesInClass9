@@ -32,6 +32,8 @@ namespace CST117_IC08_console
             {
                 if (val == elements[ i ])
                     return true;
+                //Remove this...
+                //automatically returned false if the first element isn't a match to val
                 //else
                 //    return false;
             }
@@ -55,12 +57,27 @@ namespace CST117_IC08_console
 
         public Set union( Set rhs )
         {
+            //make a new Set
+            Set result = new Set( );
 
             for (int i = 0; i < rhs.elements.Count; i++)
             {
-                this.addElement( rhs.elements[ i ] );
+                //not correct = this shouldn't change
+                //this.addElement( rhs.elements[ i ] );
+                result.addElement( rhs.elements[ i ] );
+
+                
             }
-            return rhs;
+
+            //now add elements from this set
+            foreach(int i in elements)
+            {
+                result.addElement( i );
+            }
+
+            //should return result
+            //return rhs;
+            return result;
         }
     }
 }
