@@ -60,6 +60,8 @@ namespace CST117_IC08_console
             //make a new Set
             Set result = new Set( );
 
+            int a = 0;
+
             for (int i = 0; i < rhs.elements.Count; i++)
             {
                 //not correct = this shouldn't change
