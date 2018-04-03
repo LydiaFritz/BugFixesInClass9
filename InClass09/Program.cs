@@ -33,6 +33,7 @@ namespace CST117_IC08_console
             Console.WriteLine( "After union operation" );
             Console.WriteLine( "A: " + A );
             Console.WriteLine( "B: " + B );
+            Console.WriteLine("This is a test");
 
         }
     }
